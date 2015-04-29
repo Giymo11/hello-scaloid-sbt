@@ -23,5 +23,5 @@ class LittleProfessor extends SActivity {
       SEditText("Yellow input field fills the space").fill
     } padding 20.dip
   }
-
 }
+

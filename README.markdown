@@ -8,8 +8,8 @@ Prerequisites
 -------------
 * sbt 0.13.5 or above
 * Android build tools 20.0.0 or above
-* Android SDK
-  - Both SDK Level 10 and the most recent version should be installed.
+* Android SDK Level 16
+ - Level 16 is required for building, while this app retains runtime compatibility from API Level 10. Please refer to `minSdkVersion` property in `AndroidManifest.xml`
 
 Build
 -----
@@ -32,13 +32,10 @@ Compiling and packaging runs incrementally, so this iteration takes about only f
 
 If you use default AVD, try genymotion or other faster virtual device. Deploying apk to the device becomes much faster!
 
-Using Eclipse
--------------
-
-    $ sbt eclipse
 
 Using IntelliJ IDEA
 -------------------
+We recommend to use IntelliJ, [not Android Studio](https://github.com/pfn/android-sdk-plugin#advanced-usage) [nor Eclipse](https://github.com/pocorall/hello-scaloid-sbt/issues/15).
 
 ### Generate the local.properties file
 
